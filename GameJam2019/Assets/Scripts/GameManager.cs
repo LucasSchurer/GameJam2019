@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public bool gameEnded = false;
     public GameObject madnessWorld;
     public GameObject normalWorld;
 
