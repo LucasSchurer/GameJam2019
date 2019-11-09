@@ -204,6 +204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 312789589}
   - component: {fileID: 312789590}
+  - component: {fileID: 312789591}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -237,8 +238,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36ece452734fd544fa60994be77daf60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameEnded: 0
   madnessWorld: {fileID: 1325297900}
   normalWorld: {fileID: 1547454039}
+--- !u!114 &312789591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312789588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af3dc73db2619840b14cd6ef2c33afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &552034424
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,6 +717,7 @@ GameObject:
   - component: {fileID: 617818312}
   - component: {fileID: 617818311}
   - component: {fileID: 617818310}
+  - component: {fileID: 617818313}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -769,7 +784,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617818309}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.58, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
