@@ -43,8 +43,6 @@ public class PlayerMovementController : MonoBehaviour
         // Stores the horizontal and vertical axis
         Vector2 input = GetMovementInput();
 
-        Debug.Log(input.ToString());
-
         // Change velocity X based on Input and smooth the movement
         float targetVelocityX = input.x * movementSpeed;
         velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, accelerationTimeGrounded);
@@ -86,7 +84,7 @@ public class PlayerMovementController : MonoBehaviour
     public Vector2 GetMovementInput()
     {
         // Get the player who's is controlling the body movement.
-        int playerControlling = 0;
+        int playerControlling = 4;
         for (int i = 0; i < playerInfo.numberOfPlayers; i++)
             if (playerInfo.players[i].currentAction == Action.Movement)
                 playerControlling = playerInfo.players[i].playerNumber;
@@ -147,7 +145,7 @@ public class PlayerMovementController : MonoBehaviour
     public bool isJumpKeyPressed()
     {
         // Get the player who's controlling the jump
-        int playerControlling = 1;
+        int playerControlling = 4;
         for (int i = 0; i < playerInfo.numberOfPlayers; i++)
             if (playerInfo.players[i].currentAction == Action.Jump)
                 playerControlling = playerInfo.players[i].playerNumber;
@@ -176,7 +174,7 @@ public class PlayerMovementController : MonoBehaviour
 
             default:
                 {
-                    return (Input.GetKeyDown(KeyCode.UpArrow));
+                    return false;
                 }
         }
     }

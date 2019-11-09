@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class PlayerInfo : MonoBehaviour
 {
+    public GameManager gameManager;
+    
     public int numberOfPlayers = 2;
     public Player[] players;
+
 
     public bool isIdle;
     public bool isRunning;
@@ -18,6 +21,15 @@ public class PlayerInfo : MonoBehaviour
         players = new Player[numberOfPlayers];
         for (int i = 0; i < players.Length; i++)
             players[i] = new Player(i, numberOfPlayers);
+    }
+
+    void Update()
+    {
+        for (int i = 0; i < numberOfPlayers; i++)
+        {
+            Debug.Log("Player " + (i + 1) + "\nCurrentAction: " + players[i].currentAction.ToString());
+            Debug.Log("AvailableActions: " + (Action)players[i].availableActions.x + ", " + (Action)players[i].availableActions.y);
+        }
     }
 
     public void ResetMovement()
@@ -62,4 +74,4 @@ public class PlayerInfo : MonoBehaviour
     }
 }
 
-public enum Action { Movement, Jump, Shoot, MadnessWorld };
+public enum Action { Movement, Jump, Shoot, ChangeDimension };
