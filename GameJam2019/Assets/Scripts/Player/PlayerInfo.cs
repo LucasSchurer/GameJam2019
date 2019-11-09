@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class PlayerInfo : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int playerNumber = 2;
 
-    // Update is called once per frame
-    void Update()
+    public bool isIdle;
+    public bool isRunning;
+    public bool isJumping;
+    public bool isFalling;
+
+    public void ResetMovement()
     {
-        
+        isIdle = false;
+        isRunning = false;
+        isJumping = false;
+        isFalling = false;
     }
 }

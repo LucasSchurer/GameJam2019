@@ -10,7 +10,7 @@ public class PlatformMovement2D : MonoBehaviour
     public LayerMask collisionMask;
 
     private Vector2 raySpacing;
-    private RaycastOrigins raycastOrigins;
+    public RaycastOrigins raycastOrigins;
 
     private const float skinWidth = 0.15f;
 
@@ -93,6 +93,7 @@ public class PlatformMovement2D : MonoBehaviour
 
     private void VerticalCollisions(ref Vector2 velocity)
     {
+
         float directionY = Mathf.Sign(velocity.y);
         float rayLength = Mathf.Abs(velocity.y) + skinWidth;
 
@@ -111,6 +112,26 @@ public class PlatformMovement2D : MonoBehaviour
 
                     collisions.above = directionY == 1;
                     collisions.below = directionY == -1;
+            }
+        }
+    }
+
+    public void VerticalCollisions()
+    {
+        float directionY = -1;
+        float rayLength = skinWidth;
+
+        for (int i = 0; i < rayCount.x; i++)
+        {
+            Vector2 rayOrigin = raycastOrigins.bottomLeft;
+            rayOrigin += Vector2.right * (raySpacing.y * i);
+            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.up * directionY, rayLength, collisionMask);
+
+            Debug.DrawRay(rayOrigin, Vector2.up * directionY * rayLength, Color.cyan);
+
+            if (hit)
+            {
+                collisions.below = true;
             }
         }
     }
