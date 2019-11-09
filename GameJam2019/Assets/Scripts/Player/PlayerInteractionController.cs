@@ -70,11 +70,39 @@ public class PlayerInteractionController : MonoBehaviour
 
             case 2:
                 {
+                    float input = Mathf.RoundToInt(Input.GetAxisRaw("Joy0Y"));
+
+                    if (input == 1)
+                    {
+                        playerInfo.gameManager.ChangeDimension(Dimension.Madness);
+                        break;
+                    }
+
+                    if (input == -1)
+                    {
+                        playerInfo.gameManager.ChangeDimension(Dimension.Normal);
+                        break;
+                    }
+
                     break;
                 }
 
             case 3:
                 {
+                    float input = Mathf.RoundToInt(Input.GetAxisRaw("Joy1Y"));
+
+                    if (input == 1)
+                    {
+                        playerInfo.gameManager.ChangeDimension(Dimension.Madness);
+                        break;
+                    }
+
+                    if (input == -1)
+                    {
+                        playerInfo.gameManager.ChangeDimension(Dimension.Normal);
+                        break;
+                    }
+
                     break;
                 }
 
@@ -166,12 +194,12 @@ public class PlayerInteractionController : MonoBehaviour
 
             case 2:
                 {
-                    return false;
+                    return (Mathf.RoundToInt(Input.GetAxisRaw("Joy0Y")) == 1);
                 }
 
             case 3:
                 {
-                    return false;
+                    return (Mathf.RoundToInt(Input.GetAxisRaw("Joy1Y")) == 1);
                 }
 
             default:
