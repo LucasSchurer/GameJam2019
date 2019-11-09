@@ -120,6 +120,29 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &565037304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3370467462924672785, guid: baed99aebf0fef84a993cc99d6e6c8a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7440731105562848466}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &565037306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565037304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8832ecb7754bb48882d2bc0a4e47ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNumber: 2
+  isIdle: 0
+  isRunning: 0
+  isJumping: 0
+  isFalling: 0
 --- !u!1 &617818309
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +237,7 @@ GameObject:
   - component: {fileID: 866632584}
   - component: {fileID: 866632586}
   - component: {fileID: 866632585}
+  - component: {fileID: 866632587}
   m_Layer: 8
   m_Name: Asylum
   m_TagString: Untagged
@@ -684,6 +708,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &866632587
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866632583}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &1462794677
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,6 +834,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685627808106106290, guid: baed99aebf0fef84a993cc99d6e6c8a2,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685627808106106290, guid: baed99aebf0fef84a993cc99d6e6c8a2,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685627808106106290, guid: baed99aebf0fef84a993cc99d6e6c8a2,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baed99aebf0fef84a993cc99d6e6c8a2, type: 3}

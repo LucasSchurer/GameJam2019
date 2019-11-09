@@ -16,20 +16,18 @@ public class PlayerMovementController : MonoBehaviour
     private float gravity;
     private Vector2 velocity;
     private float velocityXSmoothing;
-    
-    private int pressedButton;
 
     public float timeFloating = 0f;
     private const float coyoteEffectTime = 0.15f;
     public bool isCoyoteEffetWorking;
-        
+
     public PlatformMovement2D playerMovement;
     private PlayerInfo playerInfo;
 
     void Start()
     {
         playerMovement = GetComponent<PlatformMovement2D>();
-        playerInfo = GetComponentInParent<PlayerInfo>();    
+        playerInfo = GetComponentInParent<PlayerInfo>();
 
         gravity = -(2 * jumpHeight) / Mathf.Pow(timeToJumpApex, 2);
         jumpVelocity = Mathf.Abs(gravity * timeToJumpApex);
@@ -45,6 +43,10 @@ public class PlayerMovementController : MonoBehaviour
         // Stores the horizontal and vertical axis
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
+        // Change velocity X based on Input and smooth the movement
+        float targetVelocityX = input.x * movementSpeed;
+        velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, accelerationTimeGrounded);
+
         UpdatePlayerInfo(input);
 
         isCoyoteEffetWorking = playerInfo.isRunning && !playerInfo.isJumping && timeFloating < coyoteEffectTime;
@@ -53,7 +55,7 @@ public class PlayerMovementController : MonoBehaviour
             timeFloating += Time.deltaTime;
         else
             timeFloating = 0f;
-                
+
         // Apply coyote effect
         if (isCoyoteEffetWorking)
             velocity.y = 0f;
@@ -77,18 +79,7 @@ public class PlayerMovementController : MonoBehaviour
             velocity.y = jumpVelocity;
             playerInfo.isJumping = true;
         }
-            
-    }
 
-    public void Move(int direction)
-    {
-        velocity.x = 0f;
-
-        float targetVelocityX = direction * movementSpeed;
-        velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, accelerationTimeGrounded);
-
-        // Move the player
-        playerMovement.Move(velocity * Time.deltaTime);
     }
 
     private void UpdatePlayerInfo(Vector2 input)
@@ -106,7 +97,7 @@ public class PlayerMovementController : MonoBehaviour
 
         if (velocity.y > 0)
             playerInfo.isJumping = true;
-        
+
 
         if (velocity.y < 0)
             playerInfo.isFalling = true;
