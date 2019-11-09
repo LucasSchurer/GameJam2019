@@ -131,12 +131,26 @@ public class PlayerMovementController : MonoBehaviour
 
             case 2:
                 {
-                    return new Vector2(0, 0);
+                    /*float xAxis = 0f;
+                    if (Input.GetKey(KeyCode.Joystick1Button1))
+                        xAxis += 1f;
+                    if (Input.GetKey(KeyCode.Joystick1Button2))
+                        xAxis -= 1f;
+
+                    float yAxis = 0f;
+                    if (Input.GetKey(KeyCode.Joystick1Button3))
+                        yAxis += 1f;
+                    if (Input.GetKey(KeyCode.Joystick1Button0))
+                        yAxis -= 1f;
+
+                    return new Vector2(xAxis, yAxis);*/
+                    return new Vector2(Mathf.RoundToInt(Input.GetAxisRaw("Horizontal Joystick 1")), Mathf.RoundToInt(Input.GetAxisRaw("Vertical Joystick 1")));
+
                 }
 
             case 3:
                 {
-                    return new Vector2(0, 0);
+                    return new Vector2(Mathf.RoundToInt(Input.GetAxisRaw("Horizontal Joystick 2")), Mathf.RoundToInt(Input.GetAxisRaw("Vertical Joystick 2")));
                 }
 
             default:
@@ -168,12 +182,16 @@ public class PlayerMovementController : MonoBehaviour
 
             case 2:
                 {
-                    return false;
+                    Vector2 input = new Vector2(Mathf.RoundToInt(Input.GetAxisRaw("Horizontal Joystick 1")), Mathf.RoundToInt(Input.GetAxisRaw("Vertical Joystick 1")));
+
+                    return input.y == 1;
                 }
 
             case 3:
                 {
-                    return false;
+                    Vector2 input = new Vector2(Mathf.RoundToInt(Input.GetAxisRaw("Horizontal Joystick 2")), Mathf.RoundToInt(Input.GetAxisRaw("Vertical Joystick 2")));
+
+                    return input.y == 1;
                 }
 
             default:

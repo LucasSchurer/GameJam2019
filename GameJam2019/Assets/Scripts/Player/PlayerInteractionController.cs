@@ -26,7 +26,7 @@ public class PlayerInteractionController : MonoBehaviour
 
     public void ChangeDimension()
     {
-        // Get the player who's controlling the jump
+        // Get the player who's controlling the dimension change
         int playerControlling = 4;
         for (int i = 0; i < playerInfo.numberOfPlayers; i++)
             if (playerInfo.players[i].currentAction == Action.ChangeDimension)
@@ -70,11 +70,39 @@ public class PlayerInteractionController : MonoBehaviour
 
             case 2:
                 {
+                    Vector2 input = new Vector2(Mathf.RoundToInt(Input.GetAxisRaw("Horizontal Joystick 1")), Mathf.RoundToInt(Input.GetAxisRaw("Vertical Joystick 1")));
+
+                    if (input.y == 1)
+                    {
+                        playerInfo.gameManager.ChangeDimension(Dimension.Madness);
+                        break;
+                    }
+
+                    if (input.y == -1)
+                    {
+                        playerInfo.gameManager.ChangeDimension(Dimension.Normal);
+                        break;
+                    }
+
                     break;
                 }
 
             case 3:
                 {
+                    Vector2 input = new Vector2(Mathf.RoundToInt(Input.GetAxisRaw("Horizontal Joystick 2")), Mathf.RoundToInt(Input.GetAxisRaw("Vertical Joystick 2")));
+
+                    if (input.y == 1)
+                    {
+                        playerInfo.gameManager.ChangeDimension(Dimension.Madness);
+                        break;
+                    }
+
+                    if (input.y == -1)
+                    {
+                        playerInfo.gameManager.ChangeDimension(Dimension.Normal);
+                        break;
+                    }
+
                     break;
                 }
 
@@ -166,12 +194,16 @@ public class PlayerInteractionController : MonoBehaviour
 
             case 2:
                 {
-                    return false;
+                    Vector2 input = new Vector2(Mathf.RoundToInt(Input.GetAxisRaw("Horizontal Joystick 1")), Mathf.RoundToInt(Input.GetAxisRaw("Vertical Joystick 1")));
+
+                    return (input.y == 1);
                 }
 
             case 3:
                 {
-                    return false;
+                    Vector2 input = new Vector2(Mathf.RoundToInt(Input.GetAxisRaw("Horizontal Joystick 2")), Mathf.RoundToInt(Input.GetAxisRaw("Vertical Joystick 2")));
+
+                    return (input.y == 1);
                 }
 
             default:
