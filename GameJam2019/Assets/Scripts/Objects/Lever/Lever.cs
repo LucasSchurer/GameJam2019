@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class Lever : InteractiveObject
 {
+    public bool breakOnUse;
+
     public Sprite sprite1;
     public Sprite sprite2;
 
