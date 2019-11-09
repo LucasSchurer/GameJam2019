@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4818341623943002850}
   - component: {fileID: 4818341623943002849}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4818341623943002851}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.4879723, y: -2.307525, z: -1.4804688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -60,12 +60,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4818341624017693024}
   - component: {fileID: 4818341624017693028}
-  - component: {fileID: 4818341624017693082}
   - component: {fileID: 4818341624017693029}
   - component: {fileID: 4818341624017693030}
   - component: {fileID: 4818341624017693031}
   - component: {fileID: 4818341624017693083}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +79,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4818341624017693025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.61, y: 0.7, z: 1.48}
+  m_LocalPosition: {x: -5.16, y: 2.94, z: 1.48}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 4818341623943002850}
@@ -134,27 +133,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &4818341624017693082
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4818341624017693025}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!61 &4818341624017693029
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -196,7 +174,7 @@ MonoBehaviour:
   rayCount: {x: 4, y: 4}
   collisionMask:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 256
 --- !u!114 &4818341624017693031
 MonoBehaviour:
   m_ObjectHideFlags: 0
