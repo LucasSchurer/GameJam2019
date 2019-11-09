@@ -54,18 +54,6 @@ public class PlayerInfo : MonoBehaviour
 
             return;
         }
-
-        Action[] actions = new Action[4];
-
-        for (int i = 0; i < 4; i++)
-            actions[i] = (Action)i;
-
-        if (numberOfPlayers == 4)
-        {
-            players[2].currentAction = Action.Movement;
-            players[0].currentAction = Action.ChangeDimension;
-            players[1].currentAction = Action.Jump;
-        }
     }
 
     public struct Player

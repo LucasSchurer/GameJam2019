@@ -70,39 +70,11 @@ public class PlayerInteractionController : MonoBehaviour
 
             case 2:
                 {
-                    Vector2 input = new Vector2(Mathf.RoundToInt(Input.GetAxisRaw("Horizontal Joystick 1")), Mathf.RoundToInt(Input.GetAxisRaw("Vertical Joystick 1")));
-
-                    if (input.y == 1)
-                    {
-                        playerInfo.gameManager.ChangeDimension(Dimension.Madness);
-                        break;
-                    }
-
-                    if (input.y == -1)
-                    {
-                        playerInfo.gameManager.ChangeDimension(Dimension.Normal);
-                        break;
-                    }
-
                     break;
                 }
 
             case 3:
                 {
-                    Vector2 input = new Vector2(Mathf.RoundToInt(Input.GetAxisRaw("Horizontal Joystick 2")), Mathf.RoundToInt(Input.GetAxisRaw("Vertical Joystick 2")));
-
-                    if (input.y == 1)
-                    {
-                        playerInfo.gameManager.ChangeDimension(Dimension.Madness);
-                        break;
-                    }
-
-                    if (input.y == -1)
-                    {
-                        playerInfo.gameManager.ChangeDimension(Dimension.Normal);
-                        break;
-                    }
-
                     break;
                 }
 
@@ -160,7 +132,7 @@ public class PlayerInteractionController : MonoBehaviour
         {
             Vector2 rayOrigin = new Vector2(directionX == 1 ? coll.bounds.min.x : coll.bounds.max.x, coll.bounds.max.y);
             rayOrigin += Vector2.down * (raySpacing * i);
-            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.left * directionX, rayLength, interactionMask);
+            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, interactionMask);
 
             Debug.DrawRay(rayOrigin, Vector2.right * directionX * rayLength, Color.blue);
 
@@ -194,16 +166,12 @@ public class PlayerInteractionController : MonoBehaviour
 
             case 2:
                 {
-                    Vector2 input = new Vector2(Mathf.RoundToInt(Input.GetAxisRaw("Horizontal Joystick 1")), Mathf.RoundToInt(Input.GetAxisRaw("Vertical Joystick 1")));
-
-                    return (input.y == 1);
+                    return false;
                 }
 
             case 3:
                 {
-                    Vector2 input = new Vector2(Mathf.RoundToInt(Input.GetAxisRaw("Horizontal Joystick 2")), Mathf.RoundToInt(Input.GetAxisRaw("Vertical Joystick 2")));
-
-                    return (input.y == 1);
+                    return false;
                 }
 
             default:
