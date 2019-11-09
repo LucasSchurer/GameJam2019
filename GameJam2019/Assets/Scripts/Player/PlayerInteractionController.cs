@@ -5,17 +5,23 @@ using UnityEngine;
 public class PlayerInteractionController : MonoBehaviour
 {
     private PlayerInfo playerInfo;
-    public GameManager gameManager;
+    private BoxCollider2D coll;
+    public LayerMask interactionMask;
+
 
     void Start()
     {
         playerInfo = GetComponentInParent<PlayerInfo>();
+        coll = GetComponent<BoxCollider2D>();
     }
 
     void Update()
     {
         SwitchAction();
         ChangeDimension();
+
+        if (isInteractionKeyPressed())
+            Interact();
     }
 
     public void ChangeDimension()
@@ -41,7 +47,7 @@ public class PlayerInteractionController : MonoBehaviour
                         playerInfo.gameManager.ChangeDimension(Dimension.Normal);
                         break;
                     }
-                        
+
                     break;
                 }
 
@@ -114,6 +120,67 @@ public class PlayerInteractionController : MonoBehaviour
         }
     }
 
-    
+    public void Interact()
+    {
+        float directionX = playerInfo.facing == Direction.Left ? -1 : 1;
+        float rayLength = 1f;
+
+        int rayCount = 4;
+        float raySpacing = coll.bounds.size.y / (rayCount - 1);
+
+        for (int i = 0; i < rayCount; i++)
+        {
+            Vector2 rayOrigin = new Vector2(directionX == 1 ? coll.bounds.min.x : coll.bounds.max.x, coll.bounds.max.y);
+            rayOrigin += Vector2.down * (raySpacing * i);
+            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.left * directionX, rayLength, interactionMask);
+
+            Debug.DrawRay(rayOrigin, Vector2.right * directionX * rayLength, Color.blue);
+
+            if (hit)
+            {
+                InteractiveObject interactiveObject = hit.collider.GetComponent<InteractiveObject>();
+                interactiveObject.Interact(this);
+            }
+        }
+    }
+
+    public bool isInteractionKeyPressed()
+    {
+        // Get the player who's controlling the interact button
+        int playerControlling = 4;
+        for (int i = 0; i < playerInfo.numberOfPlayers; i++)
+            if (playerInfo.players[i].currentAction == Action.Interact)
+                playerControlling = playerInfo.players[i].playerNumber;
+
+        switch (playerControlling)
+        {
+            case 0:
+                {
+                    return (Input.GetKeyDown(KeyCode.W));
+                }
+
+            case 1:
+                {
+                    return (Input.GetKeyDown(KeyCode.UpArrow));
+                }
+
+            case 2:
+                {
+                    return false;
+                }
+
+            case 3:
+                {
+                    return false;
+                }
+
+            default:
+                {
+                    return false;
+                }
+        }
+    }
 }
+
+
 

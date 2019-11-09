@@ -15,6 +15,7 @@ public class PlayerMovementController : MonoBehaviour
     private float jumpVelocity;
     private float gravity;
     private Vector2 velocity;
+    private Vector2 oldVelocity;
     private float velocityXSmoothing;
 
     public float timeFloating = 0f;
@@ -36,6 +37,8 @@ public class PlayerMovementController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        oldVelocity = velocity;
+
         // Reset velocity.y if there's a collision above or below the player
         if (playerMovement.collisions.above || playerMovement.collisions.below && !playerInfo.isJumping)
             velocity.y = 0f;
@@ -48,6 +51,7 @@ public class PlayerMovementController : MonoBehaviour
         velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, accelerationTimeGrounded);
 
         UpdatePlayerInfo(input);
+        UpdatePlayerFacing();
 
         isCoyoteEffetWorking = playerInfo.isRunning && !playerInfo.isJumping && timeFloating < coyoteEffectTime;
 
@@ -199,5 +203,14 @@ public class PlayerMovementController : MonoBehaviour
         if (velocity.y < 0)
             playerInfo.isFalling = true;
 
+    }
+
+    private void UpdatePlayerFacing()
+    {
+        if (oldVelocity.x != velocity.x)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(velocity.x), 1, 1);
+            playerInfo.facing = Mathf.Sign(velocity.x) == 1 ? Direction.Right : Direction.Left;
+        }
     }
 }

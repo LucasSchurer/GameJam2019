@@ -15,6 +15,8 @@ public class PlayerInfo : MonoBehaviour
     public bool isJumping;
     public bool isFalling;
 
+    public Direction facing;
+
     void Start()
     {
         players = new Player[numberOfPlayers];
@@ -24,11 +26,11 @@ public class PlayerInfo : MonoBehaviour
 
     void Update()
     {
-        for (int i = 0; i < numberOfPlayers; i++)
+        /*for (int i = 0; i < numberOfPlayers; i++)
         {
             Debug.Log("Player " + (i + 1) + "\nCurrentAction: " + players[i].currentAction.ToString());
             Debug.Log("AvailableActions: " + (Action)players[i].availableActions.x + ", " + (Action)players[i].availableActions.y);
-        }
+        }*/
     }
 
     public void ResetMovement()
@@ -91,4 +93,5 @@ public class PlayerInfo : MonoBehaviour
     }
 }
 
-public enum Action { Movement, Jump, Shoot, ChangeDimension };
+public enum Action { Movement, Jump, Interact, ChangeDimension };
+public enum Direction { Left, Right };
