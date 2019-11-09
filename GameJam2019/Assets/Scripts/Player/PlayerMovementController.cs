@@ -41,7 +41,9 @@ public class PlayerMovementController : MonoBehaviour
             velocity.y = 0f;
 
         // Stores the horizontal and vertical axis
-        Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        Vector2 input = GetMovementInput();
+
+        Debug.Log(input.ToString());
 
         // Change velocity X based on Input and smooth the movement
         float targetVelocityX = input.x * movementSpeed;
@@ -63,7 +65,7 @@ public class PlayerMovementController : MonoBehaviour
             velocity.y += gravity * Time.deltaTime;
 
         // Jump if space was pressed
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (isJumpKeyPressed())
             Jump();
 
         // Move the player
@@ -79,7 +81,104 @@ public class PlayerMovementController : MonoBehaviour
             velocity.y = jumpVelocity;
             playerInfo.isJumping = true;
         }
+    }
 
+    public Vector2 GetMovementInput()
+    {
+        // Get the player who's is controlling the body movement.
+        int playerControlling = 0;
+        for (int i = 0; i < playerInfo.numberOfPlayers; i++)
+            if (playerInfo.players[i].currentAction == Action.Movement)
+                playerControlling = playerInfo.players[i].playerNumber;
+
+        switch (playerControlling)
+        {
+            case 0:
+                {
+                    float xAxis = 0f;
+                    if (Input.GetKey(KeyCode.D))
+                        xAxis += 1f;
+                    if (Input.GetKey(KeyCode.A))
+                        xAxis -= 1f;
+
+                    float yAxis = 0f;
+                    if (Input.GetKey(KeyCode.W))
+                        yAxis += 1f;
+                    if (Input.GetKey(KeyCode.S))
+                        yAxis -= 1f;
+
+                    return new Vector2(xAxis, yAxis);
+                }
+
+            case 1:
+                {
+                    float xAxis = 0f;
+                    if (Input.GetKey(KeyCode.RightArrow))
+                        xAxis += 1f;
+                    if (Input.GetKey(KeyCode.LeftArrow))
+                        xAxis -= 1f;
+
+                    float yAxis = 0f;
+                    if (Input.GetKey(KeyCode.UpArrow))
+                        yAxis += 1f;
+                    if (Input.GetKey(KeyCode.DownArrow))
+                        yAxis -= 1f;
+
+                    return new Vector2(xAxis, yAxis);
+                }
+
+            case 2:
+                {
+                    return new Vector2(0, 0);
+                }
+
+            case 3:
+                {
+                    return new Vector2(0, 0);
+                }
+
+            default:
+                {
+                    return new Vector2(0, 0);
+                }
+        }
+    }
+
+    public bool isJumpKeyPressed()
+    {
+        // Get the player who's controlling the jump
+        int playerControlling = 1;
+        for (int i = 0; i < playerInfo.numberOfPlayers; i++)
+            if (playerInfo.players[i].currentAction == Action.Jump)
+                playerControlling = playerInfo.players[i].playerNumber;
+
+        switch (playerControlling)
+        {
+            case 0:
+                {
+                    return (Input.GetKeyDown(KeyCode.W));
+                }
+
+            case 1:
+                {
+                    return (Input.GetKeyDown(KeyCode.UpArrow));
+                }
+
+            case 2:
+                {
+                    return false;
+                }
+
+            case 3:
+                {
+                    return false;
+                }
+
+            default:
+                {
+                    return (Input.GetKeyDown(KeyCode.UpArrow));
+                }
+        }
     }
 
     private void UpdatePlayerInfo(Vector2 input)
