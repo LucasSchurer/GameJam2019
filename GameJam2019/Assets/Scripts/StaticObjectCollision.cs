@@ -1,14 +1,16 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StaticObjectsCollision : MonoBehaviour
+[RequireComponent(typeof(BoxCollider2D))]
+public class StaticObjectCollision : MonoBehaviour
 {
     public Vector2 rayCount;
     public LayerMask collisionMask;
 
     private Vector2 raySpacing;
-    public RaycastOrigins raycastOrigins;
+    private RaycastOrigins raycastOrigins;
 
     private const float skinWidth = 0.15f;
 
@@ -20,6 +22,13 @@ public class StaticObjectsCollision : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         CalculateRaySpacing();
         UpdateRaycastOrigins();
+    }
+
+    void Update()
+    {
+        collisions.Reset();
+        HorizontalCollisions();
+        VerticalCollisions();
     }
 
     private void UpdateRaycastOrigins()
@@ -110,7 +119,7 @@ public class StaticObjectsCollision : MonoBehaviour
 
         for (int i = 0; i < rayCount.y; i++)
         {
-            Vector2 rayOrigin = raycastOrigins.bottomLeft;
+            Vector2 rayOrigin = directionY == -1 ? raycastOrigins.bottomLeft : raycastOrigins.topLeft;
             rayOrigin += Vector2.right * (raySpacing.y * i);
             RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.up * directionY, rayLength, collisionMask);
 
