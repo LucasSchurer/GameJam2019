@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
-public class PlatformMovement2D : MonoBehaviour
+public class StaticObjectsCollision : MonoBehaviour
 {
-    // Raycast and collision
     public Vector2 rayCount;
     public LayerMask collisionMask;
 
@@ -53,24 +51,10 @@ public class PlatformMovement2D : MonoBehaviour
         public Vector2 bottomLeft, bottomRight;
     }
 
-    public void Move(Vector2 velocity)
+    public void HorizontalCollisions()
     {
-        UpdateRaycastOrigins();
-        collisions.Reset();
-
-        if (velocity.x != 0)
-            HorizontalCollisions(ref velocity);
-
-        if (velocity.y != 0)
-            VerticalCollisions(ref velocity);
-
-        transform.Translate(velocity);
-    }
-
-    private void HorizontalCollisions(ref Vector2 velocity)
-    {
-        float directionX = Mathf.Sign(velocity.x);
-        float rayLength = Mathf.Abs(velocity.x) + skinWidth;
+        float directionX = -1;
+        float rayLength = skinWidth;
 
         for (int i = 0; i < rayCount.x; i++)
         {
@@ -78,39 +62,27 @@ public class PlatformMovement2D : MonoBehaviour
             rayOrigin += Vector2.up * (raySpacing.x * i);
             RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, collisionMask);
 
-            Debug.DrawRay(rayOrigin, Vector2.right * directionX * rayLength, Color.red);
+            Debug.DrawRay(rayOrigin, Vector2.right * directionX * rayLength, Color.cyan);
 
             if (hit)
             {
-                velocity.x = (hit.distance - skinWidth) * directionX;
-                rayLength = hit.distance;
-
-                collisions.right = directionX == 1;
-                collisions.left = directionX == -1;         
+                collisions.left = true;
             }
         }
-    }
 
-    private void VerticalCollisions(ref Vector2 velocity)
-    {
-        float directionY = Mathf.Sign(velocity.y);
-        float rayLength = Mathf.Abs(velocity.y) + skinWidth;
+        directionX = 1;
 
         for (int i = 0; i < rayCount.x; i++)
         {
-            Vector2 rayOrigin = directionY == -1 ? raycastOrigins.bottomLeft : raycastOrigins.topLeft;
-            rayOrigin += Vector2.right * (raySpacing.y * i);
-            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.up * directionY, rayLength, collisionMask);
+            Vector2 rayOrigin = directionX == -1 ? raycastOrigins.bottomLeft : raycastOrigins.bottomRight;
+            rayOrigin += Vector2.up * (raySpacing.x * i);
+            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, collisionMask);
 
-            Debug.DrawRay(rayOrigin, Vector2.up * directionY * rayLength, Color.red);
+            Debug.DrawRay(rayOrigin, Vector2.right * directionX * rayLength, Color.cyan);
 
             if (hit)
             {
-                    velocity.y = (hit.distance - skinWidth) * directionY;
-                    rayLength = hit.distance;
-
-                    collisions.above = directionY == 1;
-                    collisions.below = directionY == -1;
+                collisions.right = true;
             }
         }
     }
@@ -120,7 +92,23 @@ public class PlatformMovement2D : MonoBehaviour
         float directionY = -1;
         float rayLength = skinWidth;
 
-        for (int i = 0; i < rayCount.x; i++)
+        for (int i = 0; i < rayCount.y; i++)
+        {
+            Vector2 rayOrigin = directionY == -1 ? raycastOrigins.bottomLeft : raycastOrigins.topLeft;
+            rayOrigin += Vector2.right * (raySpacing.y * i);
+            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.up * directionY, rayLength, collisionMask);
+
+            Debug.DrawRay(rayOrigin, Vector2.up * directionY * rayLength, Color.cyan);
+
+            if (hit)
+            {
+                collisions.below = true;
+            }
+        }
+
+        directionY = 1;
+
+        for (int i = 0; i < rayCount.y; i++)
         {
             Vector2 rayOrigin = raycastOrigins.bottomLeft;
             rayOrigin += Vector2.right * (raySpacing.y * i);
@@ -130,7 +118,7 @@ public class PlatformMovement2D : MonoBehaviour
 
             if (hit)
             {
-                collisions.below = true;
+                collisions.above = true;
             }
         }
     }

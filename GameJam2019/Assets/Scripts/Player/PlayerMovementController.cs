@@ -34,7 +34,7 @@ public class PlayerMovementController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         // Reset velocity.y if there's a collision above or below the player
         if (playerMovement.collisions.above || playerMovement.collisions.below && !playerInfo.isJumping)
@@ -70,6 +70,12 @@ public class PlayerMovementController : MonoBehaviour
         playerMovement.Move(velocity * Time.deltaTime);
 
         playerMovement.VerticalCollisions();
+    }
+    */
+
+    void Update()
+    {
+
     }
 
     public void Jump()

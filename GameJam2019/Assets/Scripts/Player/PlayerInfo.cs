@@ -10,7 +10,6 @@ public class PlayerInfo : MonoBehaviour
     public int numberOfPlayers = 2;
     public Player[] players;
 
-
     public bool isIdle;
     public bool isRunning;
     public bool isJumping;
@@ -25,11 +24,11 @@ public class PlayerInfo : MonoBehaviour
 
     void Update()
     {
-        for (int i = 0; i < numberOfPlayers; i++)
+        /*for (int i = 0; i < numberOfPlayers; i++)
         {
             Debug.Log("Player " + (i + 1) + "\nCurrentAction: " + players[i].currentAction.ToString());
             Debug.Log("AvailableActions: " + (Action)players[i].availableActions.x + ", " + (Action)players[i].availableActions.y);
-        }
+        }*/
     }
 
     public void ResetMovement()
