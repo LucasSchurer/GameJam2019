@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: a188a6faa359607488a6fc5991bddff5
+guid: f28e4a3921e9cf04390315184524dd4e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4454914845596493489
-    second: Lever_0
+      213: -4596016847313634310
+    second: LeverMadness_0
   - first:
-      213: 1694985531360637023
-    second: Lever_1
+      213: -4491740812839562182
+    second: LeverMadness_1
   - first:
-      213: -5000633828712076355
-    second: Lever_2
+      213: -7422717778193073124
+    second: LeverMadness_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lever_0
+      name: LeverMadness_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7a1e439eb3b01b4c9e26f8a4e87f0bc
-      internalID: -4454914845596493489
+      spriteID: 8c4b8feaf0e7a204493cee3059c7bb31
+      internalID: -4596016847313634310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lever_1
+      name: LeverMadness_1
       rect:
         serializedVersion: 2
         x: 32
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eac9c2b3499e2904691104f4b0cec249
-      internalID: 1694985531360637023
+      spriteID: f3b05d3044a2f4b4193267d6bf44c41b
+      internalID: -4491740812839562182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lever_2
+      name: LeverMadness_2
       rect:
         serializedVersion: 2
         x: 64
@@ -160,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5ed0d7719621274e9d511ac502ca3df
-      internalID: -5000633828712076355
+      spriteID: 12689a00c154de54a8283d59f6555aab
+      internalID: -7422717778193073124
       vertices: []
       indices: 
       edges: []
@@ -169,7 +169,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: fc72ed92282dd4740a3cb9be8ca03d90
+    spriteID: dec196e027a11424e9853aa0919eb6b4
     internalID: 0
     vertices: []
     indices: 

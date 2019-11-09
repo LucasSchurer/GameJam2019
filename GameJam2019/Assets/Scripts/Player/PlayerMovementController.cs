@@ -131,12 +131,12 @@ public class PlayerMovementController : MonoBehaviour
 
             case 2:
                 {
-                    return new Vector2(Mathf.RoundToInt(Input.GetAxisRaw("Joy0X")), Mathf.RoundToInt(Input.GetAxisRaw("Joy0Y")));
+                    return new Vector2(Mathf.RoundToInt(Input.GetAxis("Joy0X")), Mathf.RoundToInt(Input.GetAxis("Joy0Y")));
                 }
 
             case 3:
                 {
-                    return new Vector2(Mathf.RoundToInt(Input.GetAxisRaw("Joy1X")), Mathf.RoundToInt(Input.GetAxisRaw("Joy1Y")));
+                    return new Vector2(Mathf.RoundToInt(Input.GetAxis("Joy1X")), Mathf.RoundToInt(Input.GetAxis("Joy1Y")));
                 }
 
             default:
@@ -168,12 +168,12 @@ public class PlayerMovementController : MonoBehaviour
 
             case 2:
                 {
-                    return (Mathf.RoundToInt(Input.GetAxisRaw("Joy0Y")) == 1);
+                    return (Mathf.RoundToInt(Input.GetAxis("Joy0Y")) == 1);
                 }
 
             case 3:
                 {
-                    return (Mathf.RoundToInt(Input.GetAxisRaw("Joy1Y")) == 1);
+                    return (Mathf.RoundToInt(Input.GetAxis("Joy1Y")) == 1);
                 }
 
             default:

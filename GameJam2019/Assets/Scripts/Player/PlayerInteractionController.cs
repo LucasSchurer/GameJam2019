@@ -39,12 +39,14 @@ public class PlayerInteractionController : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.W))
                     {
                         playerInfo.gameManager.ChangeDimension(Dimension.Madness);
+                        playerInfo.isInMadnessDimension = true;
                         break;
                     }
 
                     if (Input.GetKeyDown(KeyCode.S))
                     {
                         playerInfo.gameManager.ChangeDimension(Dimension.Normal);
+                        playerInfo.isInMadnessDimension = false;
                         break;
                     }
 
@@ -56,12 +58,14 @@ public class PlayerInteractionController : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.UpArrow))
                     {
                         playerInfo.gameManager.ChangeDimension(Dimension.Madness);
+                        playerInfo.isInMadnessDimension = true;
                         break;
                     }
 
                     if (Input.GetKeyDown(KeyCode.DownArrow))
                     {
                         playerInfo.gameManager.ChangeDimension(Dimension.Normal);
+                        playerInfo.isInMadnessDimension = false;
                         break;
                     }
 
@@ -70,17 +74,19 @@ public class PlayerInteractionController : MonoBehaviour
 
             case 2:
                 {
-                    float input = Mathf.RoundToInt(Input.GetAxisRaw("Joy0Y"));
+                    float input = Mathf.RoundToInt(Input.GetAxis("Joy0Y"));
 
                     if (input == 1)
                     {
                         playerInfo.gameManager.ChangeDimension(Dimension.Madness);
+                        playerInfo.isInMadnessDimension = true;
                         break;
                     }
 
                     if (input == -1)
                     {
                         playerInfo.gameManager.ChangeDimension(Dimension.Normal);
+                        playerInfo.isInMadnessDimension = false;
                         break;
                     }
 
@@ -89,17 +95,19 @@ public class PlayerInteractionController : MonoBehaviour
 
             case 3:
                 {
-                    float input = Mathf.RoundToInt(Input.GetAxisRaw("Joy1Y"));
+                    float input = Mathf.RoundToInt(Input.GetAxis("Joy1Y"));
 
                     if (input == 1)
                     {
                         playerInfo.gameManager.ChangeDimension(Dimension.Madness);
+                        playerInfo.isInMadnessDimension = true;
                         break;
                     }
 
                     if (input == -1)
                     {
                         playerInfo.gameManager.ChangeDimension(Dimension.Normal);
+                        playerInfo.isInMadnessDimension = false;
                         break;
                     }
 
@@ -194,12 +202,12 @@ public class PlayerInteractionController : MonoBehaviour
 
             case 2:
                 {
-                    return (Mathf.RoundToInt(Input.GetAxisRaw("Joy0Y")) == 1);
+                    return (Mathf.RoundToInt(Input.GetAxis("Joy0Y")) == 1);
                 }
 
             case 3:
                 {
-                    return (Mathf.RoundToInt(Input.GetAxisRaw("Joy1Y")) == 1);
+                    return (Mathf.RoundToInt(Input.GetAxis("Joy1Y")) == 1);
                 }
 
             default:

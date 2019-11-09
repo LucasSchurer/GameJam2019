@@ -10,10 +10,13 @@ public class PlayerInfo : MonoBehaviour
     public int numberOfPlayers = 2;
     public Player[] players;
 
+    public bool isInMadnessDimension = false;
+    
     public bool isIdle;
     public bool isRunning;
     public bool isJumping;
     public bool isFalling;
+    
 
     public Direction facing;
 
