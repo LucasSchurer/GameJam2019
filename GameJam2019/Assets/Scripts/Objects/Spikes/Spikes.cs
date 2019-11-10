@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(StaticObjectCollision))]
-public class ActionRandomizer : MonoBehaviour
+public class Spikes : MonoBehaviour
 {
     private StaticObjectCollision objectCollision;
     public PlayerInfo playerInfo;
@@ -19,8 +18,7 @@ public class ActionRandomizer : MonoBehaviour
     {
         if (objectCollision.collisions.above || objectCollision.collisions.below || objectCollision.collisions.right || objectCollision.collisions.left)
         {
-            playerInfo.RandomizeActions();
-            Object.Destroy(this.gameObject);
+            playerInfo.Kill();
         }
     }
 }
