@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class Door : InteractiveObject
 {
     public Lock lockType;
+    public int unlockLevel;
 
     public Sprite sprite1;
     public Sprite sprite2;
@@ -12,22 +13,22 @@ public abstract class Door : InteractiveObject
 
     public SpriteRenderer spriteRenderer;
 
-    public BoxCollider2D coll;
-
-    void Awake()
+    void Awake()    
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        coll = GetComponent<BoxCollider2D>();
     }
-
-    public abstract void InteractDoor(PlayerInteractionController player);
 
     public override void Interact(PlayerInteractionController player)
     {
-        if (lockType == Lock.Easy)
-        {
-            InteractDoor(player);
-        }
+        if (unlockLevel >= (int)lockType)
+            ChangeDoorState();        
+    }
+
+    public void ChangeDoorState()
+    {
+        this.gameObject.layer = this.gameObject.layer == LayerMask.NameToLayer("NonCollidable") ? LayerMask.NameToLayer("Collidable") : LayerMask.NameToLayer("NonCollidable");
+
+        TriggerDoor();
     }
 
     public void TriggerDoor()

@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class DoorLever : Lever
 {
-    public GameObject door;
+    public Door door;
+    public bool isUsed = false;
 
     public override void InteractLever(PlayerInteractionController player)
     {
-        changeAvailability();
-
-        if (door.activeSelf)
+        if (!isUsed)
         {
-            door.SetActive(false);
-            return;
-        }
-        else
+            isUsed = true;
+            door.unlockLevel++;
+            door.Interact(player);
+        } else
         {
-            door.SetActive(true);
-            return;
+            isUsed = false;
+            door.unlockLevel--;
+            door.Interact(player);
         }
     }
 }

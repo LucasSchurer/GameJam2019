@@ -8,11 +8,4 @@ public class EasyDoor : Door
     {
         isAvailable = true;
     }
-
-    public override void InteractDoor(PlayerInteractionController player)
-    {
-        this.gameObject.layer = this.gameObject.layer == LayerMask.NameToLayer("NonCollidable") ? LayerMask.NameToLayer("Collidable") : LayerMask.NameToLayer("NonCollidable");
-
-        TriggerDoor();
-    }
 }

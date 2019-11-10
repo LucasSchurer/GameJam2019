@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ActionRandomizer
   - Obstacle
+  - InteractiveObject
   layers:
   - Default
   - TransparentFX
@@ -15,10 +16,10 @@ TagManager:
   - UI
   - 
   - 
-  - Obstacle
-  - NonCollidable
   - Player
   - InteractiveObject
+  - Collidable
+  - NonCollidable
   - 
   - 
   - 
