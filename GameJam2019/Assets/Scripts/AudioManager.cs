@@ -1,6 +1,8 @@
 ﻿using UnityEngine.Audio;
 using UnityEngine;
 
+/*
+
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
@@ -18,8 +20,6 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-
-
         DontDestroyOnLoad(gameObject);
 
         foreach (Sound s in sounds)
@@ -35,7 +35,7 @@ public class AudioManager : MonoBehaviour
     }
     public void Play (string name)
     {
-        Sound s = CubemapArray.Find(sounds, sound => sound.name == name);
+        Sound s = Find(sounds, sound => sound.name == name);
         if (s == null)
         {
             Debug.LogWarning("Sound" + name + "not found!");
@@ -47,4 +47,4 @@ public class AudioManager : MonoBehaviour
 
 }
 
-//Crie um objeto vazio chamado AudioManager e insira estes scripts
+//Crie um objeto vazio chamado AudioManager e insira estes scripts*/
