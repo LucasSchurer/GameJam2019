@@ -1,130 +1,106 @@
 fileFormatVersion: 2
-guid: 5ea7e24b5007ab04eaa32c1c50f4d356
+guid: da4092ed8126eba43b424b2af45f0c6c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7093145446897808993
-    second: Asylum_0
+      213: 6873831149430320316
+    second: AsylumDecoration_0
   - first:
-      213: 3478894911610171635
-    second: Asylum_1
+      213: 2560914717092343395
+    second: AsylumDecoration_1
   - first:
-      213: -1471426769603439562
-    second: Asylum_2
+      213: 5336275818240799698
+    second: AsylumDecoration_2
   - first:
-      213: -7796856394187742360
-    second: Asylum_3
+      213: -5993959275948895154
+    second: AsylumDecoration_3
   - first:
-      213: 8987633601635018463
-    second: Asylum_4
+      213: -1939747547207682142
+    second: AsylumDecoration_4
   - first:
-      213: 9192891209765753577
-    second: Asylum_5
+      213: 2742175275518652727
+    second: AsylumDecoration_5
   - first:
-      213: -2873531068309101539
-    second: Asylum_6
+      213: -2064280758590929543
+    second: AsylumDecoration_6
   - first:
-      213: -8524950633952250786
-    second: Asylum_7
+      213: -1704523083737022327
+    second: AsylumDecoration_7
   - first:
-      213: 1689413476014441985
-    second: Asylum_8
+      213: 2237263528576423365
+    second: AsylumDecoration_8
   - first:
-      213: 5920620326649816183
-    second: Asylum_9
+      213: -7443124322573967774
+    second: AsylumDecoration_9
   - first:
-      213: -2170419385550823174
-    second: Asylum_10
+      213: -3683609266819399207
+    second: AsylumDecoration_10
   - first:
-      213: -6527296578658678624
-    second: Asylum_11
+      213: -632777703266052565
+    second: AsylumDecoration_11
   - first:
-      213: 7587530197018390188
-    second: Asylum_12
+      213: -4136816617792141980
+    second: AsylumDecoration_12
   - first:
-      213: 9197411460070876727
-    second: Asylum_13
+      213: -6949479146277460198
+    second: AsylumDecoration_13
   - first:
-      213: -4653487792992494133
-    second: Asylum_14
+      213: -3234837080887163904
+    second: AsylumDecoration_14
   - first:
-      213: -8960803980951421830
-    second: Asylum_15
+      213: 7378256169111195205
+    second: AsylumDecoration_15
   - first:
-      213: 748618546823048430
-    second: Asylum_16
+      213: 1020217974117870818
+    second: AsylumDecoration_16
   - first:
-      213: -5763624422463444066
-    second: Asylum_17
+      213: 5800970172147465831
+    second: AsylumDecoration_17
   - first:
-      213: -6669437608756343192
-    second: Asylum_18
+      213: -5093877699024527258
+    second: AsylumDecoration_18
   - first:
-      213: -4778491467723350847
-    second: Asylum_19
+      213: 6660135312512923968
+    second: AsylumDecoration_19
   - first:
-      213: -6278412660599887491
-    second: Asylum_20
+      213: 3191660375663039918
+    second: AsylumDecoration_20
   - first:
-      213: 4506822657241031940
-    second: Asylum_21
+      213: 2661453489757469247
+    second: AsylumDecoration_21
   - first:
-      213: 3026879132207216385
-    second: Asylum_22
+      213: 3606184289623497929
+    second: AsylumDecoration_22
   - first:
-      213: 1013290170755262543
-    second: Asylum_23
+      213: -2174630038084373509
+    second: AsylumDecoration_23
   - first:
-      213: -46652319981094456
-    second: Asylum_24
+      213: -4655690939447108579
+    second: AsylumDecoration_24
   - first:
-      213: 7948724597031766672
-    second: Asylum_25
+      213: 420847018380260519
+    second: AsylumDecoration_25
   - first:
-      213: -2229979068917390281
-    second: Asylum_26
+      213: -2969543235926617376
+    second: AsylumDecoration_26
   - first:
-      213: -6060454675614892373
-    second: Asylum_27
+      213: 3337365996973639147
+    second: AsylumDecoration_27
   - first:
-      213: -8340342486742832919
-    second: Asylum_28
+      213: -7323650038676421268
+    second: AsylumDecoration_28
   - first:
-      213: 2982758851058676417
-    second: Asylum_29
+      213: 4460259002968025086
+    second: AsylumDecoration_29
   - first:
-      213: -3826153395771115692
-    second: Asylum_30
+      213: -2205640208380242241
+    second: AsylumDecoration_30
   - first:
-      213: 1728302372056214653
-    second: Asylum_31
+      213: 6669573143565418348
+    second: AsylumDecoration_31
   - first:
-      213: -3829926960078428809
-    second: Asylum_32
-  - first:
-      213: -2581044188223630460
-    second: Asylum_33
-  - first:
-      213: 263010402097681918
-    second: Asylum_34
-  - first:
-      213: -4606056251373301091
-    second: Asylum_35
-  - first:
-      213: 3643564628845085384
-    second: Asylum_36
-  - first:
-      213: -6886103135084086424
-    second: Asylum_37
-  - first:
-      213: 5950333842146808750
-    second: Asylum_38
-  - first:
-      213: -8002552095208033786
-    second: Asylum_39
-  - first:
-      213: -3257346338407636541
-    second: Asylum_40
+      213: 4343632597115258253
+    second: AsylumDecoration_32
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -170,8 +146,8 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
-  alphaUsage: 0
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
@@ -205,69 +181,15 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Asylum_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 165
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f69accacf5821b46a4bba07fdd74b10
-      internalID: 7093145446897808993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 149
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d29fe59e49eecf4ab788847a20ff4dd
-      internalID: 3478894911610171635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_2
+      name: AsylumDecoration_0
       rect:
         serializedVersion: 2
         x: 16
-        y: 149
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -277,18 +199,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6711c5884960ce4da97742e0e73d35a
-      internalID: -1471426769603439562
+      spriteID: 240c93429f5114f45a38ccd5eb8029bc
+      internalID: 6873831149430320316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asylum_3
+      name: AsylumDecoration_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 149
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -298,18 +220,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a4d74f455b348c4288345aea944e0e1
-      internalID: -7796856394187742360
+      spriteID: 029f284cfe4857049b1ee7176eab0182
+      internalID: 2560914717092343395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asylum_4
+      name: AsylumDecoration_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd8b40ba36a96d4e8f7825b53c511f5
+      internalID: 5336275818240799698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_3
       rect:
         serializedVersion: 2
         x: 80
-        y: 149
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -319,18 +262,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e874514dbdadad644af6c9da214d2555
-      internalID: 8987633601635018463
+      spriteID: 20d7894bcf0e9e14aa44d51ef3615665
+      internalID: -5993959275948895154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asylum_5
+      name: AsylumDecoration_4
       rect:
         serializedVersion: 2
         x: 96
-        y: 149
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -340,18 +283,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3aff489845fc9d49895e2cf6d7c477e
-      internalID: 9192891209765753577
+      spriteID: 5f212ed55c79cae47bcf7fea88454128
+      internalID: -1939747547207682142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asylum_6
+      name: AsylumDecoration_5
       rect:
         serializedVersion: 2
         x: 112
-        y: 149
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -361,18 +304,207 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82498c27db021cf46a930990951347a7
-      internalID: -2873531068309101539
+      spriteID: 7eda4276dcbe6974ba358e50a5d873ec
+      internalID: 2742175275518652727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asylum_7
+      name: AsylumDecoration_6
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89228efbe67f4447bf87c070b03d4f2
+      internalID: -2064280758590929543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79225c54d2bca6f448094dcb5a4d147a
+      internalID: -1704523083737022327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799534945fe96014c9924f66386761ed
+      internalID: 2237263528576423365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4766b4ff52e532a488955a9c488988c5
+      internalID: -7443124322573967774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_10
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303fb8980381bcb4ca1d20b975b972ce
+      internalID: -3683609266819399207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_11
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596545df6092aff4f896edbd81dca2e5
+      internalID: -632777703266052565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fb9a50a4a14c649a10455dd5a2a8b0
+      internalID: -4136816617792141980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0a97d3822c80949b348fe77a48a1d7
+      internalID: -6949479146277460198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8713e98cd19663847affac10bccb6d18
+      internalID: -3234837080887163904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_15
       rect:
         serializedVersion: 2
         x: 80
-        y: 133
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -382,18 +514,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32e8361e9fd507f4ea59661a74dad3f9
-      internalID: -8524950633952250786
+      spriteID: def974de47b3aea4f860a1f2704ccf5b
+      internalID: 7378256169111195205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asylum_8
+      name: AsylumDecoration_16
       rect:
         serializedVersion: 2
         x: 96
-        y: 133
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -403,18 +535,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eac9d49c7fe1c74469ed046709a2bab6
-      internalID: 1689413476014441985
+      spriteID: ad857a5b2a71c7d4586a81ce7c72e1e8
+      internalID: 1020217974117870818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asylum_9
+      name: AsylumDecoration_17
       rect:
         serializedVersion: 2
         x: 112
-        y: 133
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -424,186 +556,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6604d70ce13a7242a017bec28dd8205
-      internalID: 5920620326649816183
+      spriteID: e029e84e7f8eb554f87f25e80303d882
+      internalID: 5800970172147465831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asylum_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 117
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8bc665f4eaf9d644ae1f4e6fe345236
-      internalID: -2170419385550823174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_11
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 117
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c1a9967ff14f514e8396cc69764e5cb
-      internalID: -6527296578658678624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_12
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 117
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bd406462b28b3f4096fee6084207c5c
-      internalID: 7587530197018390188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_13
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 101
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e18c37a2e01e53549a94c7ed5d3b1e19
-      internalID: 9197411460070876727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_14
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 85
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 875687efb22199241b6e38ed70113b5c
-      internalID: -4653487792992494133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_15
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 85
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d81522c69afef54babf8e35452548fc
-      internalID: -8960803980951421830
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_16
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 85
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5e9b461b695c6746a8c50f5224b552a
-      internalID: 748618546823048430
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_17
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 85
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd8909a9df7a4a347ae707681f4772db
-      internalID: -5763624422463444066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_18
+      name: AsylumDecoration_18
       rect:
         serializedVersion: 2
         x: 176
-        y: 85
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -613,18 +577,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9355eda95e6f0945bf4b3a7eaef3fec
-      internalID: -6669437608756343192
+      spriteID: 3e072dd790a7e954da6a3dcfb53571d5
+      internalID: -5093877699024527258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asylum_19
+      name: AsylumDecoration_19
       rect:
         serializedVersion: 2
         x: 192
-        y: 85
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -634,18 +598,186 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e208756e454adc243bf73e11e2ff7560
-      internalID: -4778491467723350847
+      spriteID: a8d8bdd474d63e74697a18910d65855e
+      internalID: 6660135312512923968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asylum_20
+      name: AsylumDecoration_20
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa6370269f263a4eb3d19c78054384e
+      internalID: 3191660375663039918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_21
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec78a802bdb071e4a8b7bed0a19337be
+      internalID: 2661453489757469247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_22
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006841135702f2f4e8385992ba118c3b
+      internalID: 3606184289623497929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_23
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97f7adc6762fec4896e8b61c3a05408
+      internalID: -2174630038084373509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_24
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743609c5695da9541804cf92397ab9fa
+      internalID: -4655690939447108579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d66c26a7cd6ea24cbaace0749944046
+      internalID: 420847018380260519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_26
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67bbe061d3176f441a604d9b74d2dffc
+      internalID: -2969543235926617376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_27
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8d7a7ad617905469f508cffdee188a
+      internalID: 3337365996973639147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsylumDecoration_28
       rect:
         serializedVersion: 2
         x: 96
-        y: 69
+        y: 256
         width: 16
         height: 16
       alignment: 0
@@ -655,18 +787,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17a5164327cac6d4fbcfe07ff0d02f12
-      internalID: -6278412660599887491
+      spriteID: 0967be9821a74a546905e5fd2c2b14e4
+      internalID: -7323650038676421268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asylum_21
+      name: AsylumDecoration_29
       rect:
         serializedVersion: 2
         x: 112
-        y: 69
+        y: 256
         width: 16
         height: 16
       alignment: 0
@@ -676,18 +808,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20172b04cd4a22f4a9a24e474f1656d2
-      internalID: 4506822657241031940
+      spriteID: 8dfcc8b54c7f3e640b50ddcd21fe5144
+      internalID: 4460259002968025086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asylum_22
+      name: AsylumDecoration_30
       rect:
         serializedVersion: 2
-        x: 128
-        y: 69
+        x: 256
+        y: 256
         width: 16
         height: 16
       alignment: 0
@@ -697,18 +829,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 257a83b6b42ff8f47a41e2f09d5d67a0
-      internalID: 3026879132207216385
+      spriteID: eff82c6b707002947ab0924214d6372e
+      internalID: -2205640208380242241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asylum_23
+      name: AsylumDecoration_31
       rect:
         serializedVersion: 2
-        x: 160
-        y: 69
+        x: 272
+        y: 256
         width: 16
         height: 16
       alignment: 0
@@ -718,18 +850,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce87fa55d2e8c754fb889e3eb6aa7964
-      internalID: 1013290170755262543
+      spriteID: 6821ba77515ce6b4f8fec7498b8dd844
+      internalID: 6669573143565418348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asylum_24
+      name: AsylumDecoration_32
       rect:
         serializedVersion: 2
-        x: 176
-        y: 69
+        x: 288
+        y: 256
         width: 16
         height: 16
       alignment: 0
@@ -739,344 +871,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31abadde51891eb42ba6c9a9aa45942a
-      internalID: -46652319981094456
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_25
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 69
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67b7304d409e22c47b3ee62c2b6f2ac2
-      internalID: 7948724597031766672
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_26
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 53
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7f220dd6824c09458271c03694ad4ec
-      internalID: -2229979068917390281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_27
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 53
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b2e23c43eb91ad43aa0a6041c3836b2
-      internalID: -6060454675614892373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_28
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 53
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce589dd6fc7036548907117185c325f8
-      internalID: -8340342486742832919
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_29
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 53
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6196747b96763fc4087ac288d656e190
-      internalID: 2982758851058676417
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_30
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 53
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf67ab5084c4d9c448f3f664fa23c157
-      internalID: -3826153395771115692
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_31
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 53
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e5f3e49fe3a8ac43a4ce815f80d9ffa
-      internalID: 1728302372056214653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_32
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 53
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f5dc7e1fcdbfaa43b43fe8578fa2989
-      internalID: -3829926960078428809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_33
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 53
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6521bb2f33dd6a042995dd930ac998cf
-      internalID: -2581044188223630460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_34
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 53
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a972202284219cd46a3255db7f1eb6c3
-      internalID: 263010402097681918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_35
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 37
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bcfaa41c45932b428d965f371d138bc
-      internalID: -4606056251373301091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_36
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 37
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4ac146cdd2347a4a9588eb2b93573f5
-      internalID: 3643564628845085384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_37
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 37
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfcb86cf0d43a2d4d97cb22f09eadf27
-      internalID: -6886103135084086424
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_38
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 21
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2cc841f1eae84b4e87aae85f2682e57
-      internalID: 5950333842146808750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_39
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 21
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d147113083908e341b8d010df2a198d5
-      internalID: -8002552095208033786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asylum_40
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 21
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b7d77443d077be4b8d8fd572d4527b7
-      internalID: -3257346338407636541
+      spriteID: c4abe1278e9ca5e46b596a78c13e5635
+      internalID: 4343632597115258253
       vertices: []
       indices: 
       edges: []
@@ -1084,7 +880,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: eea8ab240f1e03f45904a01df6c752e7
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
