@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Lamp : MonoBehaviour
 {
-    private bool isOn = true;
+    public bool isOn = true;
 
     private SpriteRenderer spriteRenderer;
     private Light2D light2D;
