@@ -12,6 +12,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorLeverNormal
       objectReference: {fileID: 0}
+    - target: {fileID: 3748677709198917154, guid: 1a52a92d644e889489194127feb926a6,
+        type: 3}
+      propertyPath: sprite1
+      value: 
+      objectReference: {fileID: -4454914845596493489, guid: a188a6faa359607488a6fc5991bddff5,
+        type: 3}
+    - target: {fileID: 3748677709198917154, guid: 1a52a92d644e889489194127feb926a6,
+        type: 3}
+      propertyPath: sprite2
+      value: 
+      objectReference: {fileID: 1694985531360637023, guid: a188a6faa359607488a6fc5991bddff5,
+        type: 3}
+    - target: {fileID: 3748677709198917154, guid: 1a52a92d644e889489194127feb926a6,
+        type: 3}
+      propertyPath: breakOnUse
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6753804582383245139, guid: 1a52a92d644e889489194127feb926a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -65,23 +82,6 @@ PrefabInstance:
     - target: {fileID: 6753804582383245139, guid: 1a52a92d644e889489194127feb926a6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3748677709198917154, guid: 1a52a92d644e889489194127feb926a6,
-        type: 3}
-      propertyPath: sprite1
-      value: 
-      objectReference: {fileID: -4454914845596493489, guid: a188a6faa359607488a6fc5991bddff5,
-        type: 3}
-    - target: {fileID: 3748677709198917154, guid: 1a52a92d644e889489194127feb926a6,
-        type: 3}
-      propertyPath: sprite2
-      value: 
-      objectReference: {fileID: 1694985531360637023, guid: a188a6faa359607488a6fc5991bddff5,
-        type: 3}
-    - target: {fileID: 3748677709198917154, guid: 1a52a92d644e889489194127feb926a6,
-        type: 3}
-      propertyPath: breakOnUse
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

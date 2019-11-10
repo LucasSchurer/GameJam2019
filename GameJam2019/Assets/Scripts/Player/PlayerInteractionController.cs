@@ -8,7 +8,6 @@ public class PlayerInteractionController : MonoBehaviour
     private BoxCollider2D coll;
     public LayerMask interactionMask;
 
-
     void Start()
     {
         playerInfo = GetComponentInParent<PlayerInfo>();
@@ -210,8 +209,11 @@ public class PlayerInteractionController : MonoBehaviour
 
             if (hit)
             {
-                InteractiveObject interactiveObject = hit.collider.GetComponent<InteractiveObject>();
-                interactiveObject.Interact(this);
+                if (hit.collider.tag == "InteractiveObject")
+                {
+                    InteractiveObject interactiveObject = hit.collider.GetComponent<InteractiveObject>();
+                    interactiveObject.Interact(this);
+                }
             }
         }
     }
