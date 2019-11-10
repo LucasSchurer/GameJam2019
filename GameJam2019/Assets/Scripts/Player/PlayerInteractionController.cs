@@ -194,9 +194,20 @@ public class PlayerInteractionController : MonoBehaviour
     public void Interact()
     {
         float directionX = playerInfo.facing == Direction.Left ? -1 : 1;
-        float rayLength = 1f;
+        float rayLength = 2f;
 
-        int rayCount = 4;
+        Collider2D[] hit = Physics2D.OverlapBoxAll(coll.bounds.center, coll.size * rayLength, 0, interactionMask);
+
+        for (int i = 0; i < hit.Length; i++)
+        {
+            if (hit[i].tag == "InteractiveObject")
+            {
+                InteractiveObject interactiveObject = hit[i].GetComponent<InteractiveObject>();
+                interactiveObject.Interact(this);
+            }
+        }
+
+        /*int rayCount = 4;
         float raySpacing = coll.bounds.size.y / (rayCount - 1);
 
         for (int i = 0; i < rayCount; i++)
@@ -205,7 +216,7 @@ public class PlayerInteractionController : MonoBehaviour
             rayOrigin += Vector2.down * (raySpacing * i);
             RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, interactionMask);
 
-            Debug.DrawRay(rayOrigin, Vector2.right * directionX * rayLength, Color.blue);
+            Debug.DrawRay(rayOrigin, Vector2.right * directionX * rayLength, Color.red);
 
             if (hit)
             {
@@ -215,7 +226,7 @@ public class PlayerInteractionController : MonoBehaviour
                     interactiveObject.Interact(this);
                 }
             }
-        }
+        }*/
     }
 
     public bool isInteractionKeyPressed()

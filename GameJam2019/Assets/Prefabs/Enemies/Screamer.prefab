@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7763293512067177395}
   - component: {fileID: 7763293512067177392}
   - component: {fileID: 7763293512067177393}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screamer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,10 +67,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2135418685
+  m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9222089305723263974, guid: eda8dcf8b3bbef34ba7103e61e3287b8,
+  m_Sprite: {fileID: -2209255722639260490, guid: 1004678c7da9dfb458611988b3e44cee,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -95,12 +95,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInfo: {fileID: 0}
-  screamCooldown: 0
+  isScreaming: 0
+  screamCooldown: 5
   screamCooldownLeft: 0
   screamRadius: 5
+  screamTime: 2
+  screamTimeLeft: 0
   screamMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 256
   soundProofingMask:
     serializedVersion: 2
     m_Bits: 0
+  shockWave: {fileID: 1259428491382712085, guid: 479dd77b37e7e654683ac4934ca9070b,
+    type: 3}
+  timeBetweenWaves: 2
+  timeBeforeNewWave: 0
