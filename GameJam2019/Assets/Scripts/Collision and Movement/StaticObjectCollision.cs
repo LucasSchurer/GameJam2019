@@ -26,6 +26,7 @@ public class StaticObjectCollision : MonoBehaviour
 
     void Update()
     {
+        UpdateRaycastOrigins();
         collisions.Reset();
         HorizontalCollisions();
         VerticalCollisions();

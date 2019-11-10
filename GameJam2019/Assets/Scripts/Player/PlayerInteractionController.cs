@@ -26,100 +26,136 @@ public class PlayerInteractionController : MonoBehaviour
 
     public void ChangeDimension()
     {
-        // Get the player who's controlling the dimension change
-        int playerControlling = 4;
-        for (int i = 0; i < playerInfo.numberOfPlayers; i++)
-            if (playerInfo.players[i].currentAction == Action.ChangeDimension)
-                playerControlling = playerInfo.players[i].playerNumber;
-
-        switch (playerControlling)
+        if (playerInfo.canChangeDimension)
         {
-            case 0:
-                {
-                    if (Input.GetKeyDown(KeyCode.W))
+            // Get the player who's controlling the dimension change
+            int playerControlling = 4;
+            for (int i = 0; i < playerInfo.numberOfPlayers; i++)
+                if (playerInfo.players[i].currentAction == Action.ChangeDimension)
+                    playerControlling = playerInfo.players[i].playerNumber;
+
+            switch (playerControlling)
+            {
+                case 0:
                     {
-                        playerInfo.gameManager.ChangeDimension(Dimension.Madness);
-                        playerInfo.isInMadnessDimension = true;
+                        if (Input.GetKeyDown(KeyCode.W))
+                        {
+                            if (!playerInfo.isInMadnessDimension)
+                                playerInfo.dimensionChangeCooldownLeft = playerInfo.dimensionChangeCooldown;
+
+                            playerInfo.gameManager.ChangeDimension(Dimension.Madness);
+                            playerInfo.isInMadnessDimension = true;
+
+                            break;
+                        }
+
+                        else if (Input.GetKeyDown(KeyCode.S))
+                        {
+                            if (playerInfo.isInMadnessDimension)
+                                playerInfo.dimensionChangeCooldownLeft = playerInfo.dimensionChangeCooldown;
+
+                            playerInfo.gameManager.ChangeDimension(Dimension.Normal);
+                            playerInfo.isInMadnessDimension = false;
+
+                            break;
+                        }
+
                         break;
                     }
 
-                    if (Input.GetKeyDown(KeyCode.S))
+                case 1:
                     {
-                        playerInfo.gameManager.ChangeDimension(Dimension.Normal);
-                        playerInfo.isInMadnessDimension = false;
+                        if (Input.GetKeyDown(KeyCode.UpArrow))
+                        {
+                            if (!playerInfo.isInMadnessDimension)
+                                playerInfo.dimensionChangeCooldownLeft = playerInfo.dimensionChangeCooldown;
+
+                            playerInfo.gameManager.ChangeDimension(Dimension.Madness);
+                            playerInfo.isInMadnessDimension = true;
+
+                            break;
+                        }
+
+                        else if (Input.GetKeyDown(KeyCode.DownArrow))
+                        {
+                            if (playerInfo.isInMadnessDimension)
+                                playerInfo.dimensionChangeCooldownLeft = playerInfo.dimensionChangeCooldown;
+
+                            playerInfo.gameManager.ChangeDimension(Dimension.Normal);
+                            playerInfo.isInMadnessDimension = false;
+
+                            break;
+                        }
+
                         break;
                     }
 
-                    break;
-                }
-
-            case 1:
-                {
-                    if (Input.GetKeyDown(KeyCode.UpArrow))
+                case 2:
                     {
-                        playerInfo.gameManager.ChangeDimension(Dimension.Madness);
-                        playerInfo.isInMadnessDimension = true;
+                        float input = Mathf.RoundToInt(Input.GetAxis("Joy0Y"));
+
+                        if (input == 1)
+                        {
+                            if (!playerInfo.isInMadnessDimension)
+                                playerInfo.dimensionChangeCooldownLeft = playerInfo.dimensionChangeCooldown;
+
+                            playerInfo.gameManager.ChangeDimension(Dimension.Madness);
+                            playerInfo.isInMadnessDimension = true;
+
+                            break;
+                        } 
+
+                        else if (input == -1)
+                        {
+                            if (playerInfo.isInMadnessDimension)
+                                playerInfo.dimensionChangeCooldownLeft = playerInfo.dimensionChangeCooldown;
+
+                            playerInfo.gameManager.ChangeDimension(Dimension.Normal);
+                            playerInfo.isInMadnessDimension = false;
+
+                            break;
+                        }
+
                         break;
                     }
 
-                    if (Input.GetKeyDown(KeyCode.DownArrow))
+                case 3:
                     {
-                        playerInfo.gameManager.ChangeDimension(Dimension.Normal);
-                        playerInfo.isInMadnessDimension = false;
+                        float input = Mathf.RoundToInt(Input.GetAxis("Joy1Y"));
+
+                        if (input == 1)
+                        {
+                            if (!playerInfo.isInMadnessDimension)
+                                playerInfo.dimensionChangeCooldownLeft = playerInfo.dimensionChangeCooldown;
+
+                            playerInfo.gameManager.ChangeDimension(Dimension.Madness);
+                            playerInfo.isInMadnessDimension = true;
+
+                            break;
+                        }
+
+                        else if (input == -1)
+                        {
+                            if (playerInfo.isInMadnessDimension)
+                                playerInfo.dimensionChangeCooldownLeft = playerInfo.dimensionChangeCooldown;
+
+                            playerInfo.gameManager.ChangeDimension(Dimension.Normal);
+                            playerInfo.isInMadnessDimension = false;
+
+                            break;
+                        }
+
                         break;
                     }
 
-                    break;
-                }
-
-            case 2:
-                {
-                    float input = Mathf.RoundToInt(Input.GetAxis("Joy0Y"));
-
-                    if (input == 1)
+                default:
                     {
-                        playerInfo.gameManager.ChangeDimension(Dimension.Madness);
-                        playerInfo.isInMadnessDimension = true;
                         break;
                     }
-
-                    if (input == -1)
-                    {
-                        playerInfo.gameManager.ChangeDimension(Dimension.Normal);
-                        playerInfo.isInMadnessDimension = false;
-                        break;
-                    }
-
-                    break;
-                }
-
-            case 3:
-                {
-                    float input = Mathf.RoundToInt(Input.GetAxis("Joy1Y"));
-
-                    if (input == 1)
-                    {
-                        playerInfo.gameManager.ChangeDimension(Dimension.Madness);
-                        playerInfo.isInMadnessDimension = true;
-                        break;
-                    }
-
-                    if (input == -1)
-                    {
-                        playerInfo.gameManager.ChangeDimension(Dimension.Normal);
-                        playerInfo.isInMadnessDimension = false;
-                        break;
-                    }
-
-                    break;
-                }
-
-            default:
-                {
-                    break;
-                }
+            }
         }
     }
+        
 
     public void SwitchAction()
     {

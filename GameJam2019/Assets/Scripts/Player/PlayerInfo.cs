@@ -16,11 +16,19 @@ public class PlayerInfo : MonoBehaviour
     public bool isRunning;
     public bool isJumping;
     public bool isFalling;
-    
+
+    public float jumpCooldown = 2.5f;
+    public float dimensionChangeCooldown = 5f;
+
+    public float jumpCooldownLeft;
+    public float dimensionChangeCooldownLeft;
+
+    public bool canJump;
+    public bool canChangeDimension;
 
     public Direction facing;
 
-    void Start()
+    void Awake()
     {
         players = new Player[numberOfPlayers];
         for (int i = 0; i < players.Length; i++)
@@ -34,6 +42,13 @@ public class PlayerInfo : MonoBehaviour
             Debug.Log("Player " + (i + 1) + "\nCurrentAction: " + players[i].currentAction.ToString());
             Debug.Log("AvailableActions: " + (Action)players[i].availableActions.x + ", " + (Action)players[i].availableActions.y);
         }*/
+
+        jumpCooldownLeft = jumpCooldownLeft > 0 ? jumpCooldownLeft - Time.deltaTime : 0;
+
+        dimensionChangeCooldownLeft = dimensionChangeCooldownLeft > 0 ? dimensionChangeCooldownLeft - Time.deltaTime : 0;
+
+        canJump = jumpCooldownLeft == 0;
+        canChangeDimension = dimensionChangeCooldownLeft == 0;
     }
 
     public void ResetMovement()
@@ -57,6 +72,21 @@ public class PlayerInfo : MonoBehaviour
 
             return;
         }
+
+        players[0].availableActions = new Vector2(3, 3);
+        players[1].availableActions = new Vector2(2, 2);
+        players[2].availableActions = new Vector2(1, 1);
+        players[3].availableActions = new Vector2(0, 0);
+
+        players[0].UpdateCurrentAction(0);
+        players[1].UpdateCurrentAction(0);
+        players[2].UpdateCurrentAction(0);
+        players[3].UpdateCurrentAction(0);
+    }
+
+    public void Kill()
+    {
+        gameManager.gameEnded = true;
     }
 
     public struct Player

@@ -148,39 +148,70 @@ public class PlayerMovementController : MonoBehaviour
 
     public bool isJumpKeyPressed()
     {
-        // Get the player who's controlling the jump
-        int playerControlling = 4;
-        for (int i = 0; i < playerInfo.numberOfPlayers; i++)
-            if (playerInfo.players[i].currentAction == Action.Jump)
-                playerControlling = playerInfo.players[i].playerNumber;
-
-        switch (playerControlling)
+        if (playerInfo.canJump)
         {
-            case 0:
-                {
-                    return (Input.GetKeyDown(KeyCode.W));
-                }
+            // Get the player who's controlling the jump
+            int playerControlling = 4;
+            for (int i = 0; i < playerInfo.numberOfPlayers; i++)
+                if (playerInfo.players[i].currentAction == Action.Jump)
+                    playerControlling = playerInfo.players[i].playerNumber;
 
-            case 1:
-                {
-                    return (Input.GetKeyDown(KeyCode.UpArrow));
-                }
+            switch (playerControlling)
+            {
+                case 0:
+                    {
+                        if (Input.GetKeyDown(KeyCode.W))
+                        {
+                            playerInfo.jumpCooldownLeft = playerInfo.jumpCooldown;
+                            return true;
+                        }
+                        else
+                            return false;
+                            
+                    }
 
-            case 2:
-                {
-                    return (Mathf.RoundToInt(Input.GetAxis("Joy0Y")) == 1);
-                }
+                case 1:
+                    {
+                        if (Input.GetKeyDown(KeyCode.UpArrow))
+                        {
+                            playerInfo.jumpCooldownLeft = playerInfo.jumpCooldown;
 
-            case 3:
-                {
-                    return (Mathf.RoundToInt(Input.GetAxis("Joy1Y")) == 1);
-                }
+                            return true;
+                        }
+                        else
+                            return false;
+                    }
 
-            default:
-                {
-                    return false;
-                }
+                case 2:
+                    {
+                        if (Mathf.RoundToInt(Input.GetAxis("Joy0Y")) == 1)
+                        {
+                            playerInfo.jumpCooldownLeft = playerInfo.jumpCooldown;
+                            return true;
+                        }
+                        else
+                            return false;
+                    }
+
+                case 3:
+                    {
+                        if (Mathf.RoundToInt(Input.GetAxis("Joy1Y")) == 1)
+                        {
+                            playerInfo.jumpCooldownLeft = playerInfo.jumpCooldown;
+                            return true;
+                        }
+                        else
+                            return false;
+                    }
+
+                default:
+                    {
+                        return false;
+                    }
+            }
         }
+        else
+            return false;
     }
 
     private void UpdatePlayerInfo(Vector2 input)
