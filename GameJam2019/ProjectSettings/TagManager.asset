@@ -20,7 +20,7 @@ TagManager:
   - InteractiveObject
   - Collidable
   - NonCollidable
-  - 
+  - Decoration
   - 
   - 
   - 
