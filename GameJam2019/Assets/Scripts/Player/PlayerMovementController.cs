@@ -25,7 +25,7 @@ public class PlayerMovementController : MonoBehaviour
     public PlatformMovement2D playerMovement;
     private PlayerInfo playerInfo;
 
-    void Start()
+    void Awake()
     {
         playerMovement = GetComponent<PlatformMovement2D>();
         playerInfo = GetComponentInParent<PlayerInfo>();
@@ -63,7 +63,7 @@ public class PlayerMovementController : MonoBehaviour
         // Apply coyote effect
         if (isCoyoteEffetWorking)
             velocity.y = 0f;
-        else
+        else 
             velocity.y += gravity * Time.deltaTime;
 
         // Jump if space was pressed

@@ -21,7 +21,14 @@ public abstract class Door : InteractiveObject
     public override void Interact(PlayerInteractionController player)
     {
         if (unlockLevel >= (int)lockType)
-            ChangeDoorState();        
+        {
+            ChangeDoorState();
+        } else
+        {
+            this.gameObject.layer = LayerMask.NameToLayer("Collidable");
+            spriteRenderer.sprite = sprite1;
+        }
+            
     }
 
     public void ChangeDoorState()
@@ -33,7 +40,7 @@ public abstract class Door : InteractiveObject
 
     public void TriggerDoor()
     {
-        if (lockType == Lock.Easy || lockType == Lock.Normal)
+        //if (lockType == Lock.Easy || lockType == Lock.Normal)
             spriteRenderer.sprite = (spriteRenderer.sprite == sprite2) ? sprite1 : sprite2;
     }
 }

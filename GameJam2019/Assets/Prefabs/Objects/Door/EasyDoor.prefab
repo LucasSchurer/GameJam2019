@@ -96,11 +96,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAvailable: 1
   lockType: 0
+  unlockLevel: 0
   sprite1: {fileID: 5213229242370633579, guid: 0fdb22d4c80552b49a6796ca307388ce, type: 3}
   sprite2: {fileID: 436563815456543028, guid: 0fdb22d4c80552b49a6796ca307388ce, type: 3}
   sprite3: {fileID: 0}
   spriteRenderer: {fileID: 0}
-  coll: {fileID: 0}
 --- !u!61 &7561957719695432114
 BoxCollider2D:
   m_ObjectHideFlags: 0
